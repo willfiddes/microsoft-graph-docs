@@ -31,9 +31,10 @@ We have 100+ connectors built by Microsoft and partners that enable you to conne
 
 While these connectors help connect to popular services, you may want to integrate other services that are not available in the existing  [connectors gallery](https://docs.microsoft.com/microsoftsearch/connectors-gallery). Enabling you to build a custom connector using the Microsoft Graph Connector APIs to bring the external data you need into Microsoft 365 experiences such as Microsoft Search (and more coming soon) into your organization.
 
-<!---Coming soon
+
 Get started with custom Graph connectors:
 * [Graph Connector API overview](data-inflow-connectors-api-overview.md)
+<!---To be added soon:
 * [Try Graph Connector APIs using Postman](data-inflow-connectors-api-postman.md)
 * [Build your first custom connector with Microsoft Graph]()
  --->
