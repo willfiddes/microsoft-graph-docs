@@ -1,0 +1,85 @@
+---
+title: "List fixedIssues"
+description: "Get the fixedIssueCatalogEntry resources from the fixedIssues navigation property."
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+localization_priority: Normal
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+doc_type: apiPageType
+---
+
+# List fixedIssues
+Namespace: microsoft.graph.windowsUpdates
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get the fixedIssueCatalogEntry resources from the fixedIssues navigation property.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
+|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
+|Application|**TODO: Provide applicable permissions.**|
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /qualityUpdateCatalogEntry/fixedIssues
+```
+
+## Optional query parameters
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [fixedIssueCatalogEntry](../resources/fixedissuecatalogentry.md) objects in the response body.
+
+## Examples
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "list_fixedissuecatalogentry"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/qualityUpdateCatalogEntry/fixedIssues
+```
+
+
+### Response
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.windowsUpdates.fixedIssueCatalogEntry)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.fixedIssueCatalogEntry",
+      "id": "51ca715b-715b-51ca-5b71-ca515b71ca51"
+    }
+  ]
+}
+```
+
