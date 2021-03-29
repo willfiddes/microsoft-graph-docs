@@ -259,21 +259,16 @@ You can add an item to the index by [creating an externalItem](https://docs.micr
 
 For example, your application may index helpdesk tickets using the ticket number. If a ticket has the ticket number SR00145, the request may look like the following.
 
-HTTPCopy
-
+```http
 PUT /external/connections/contosohelpdesk/items/SR00145
-
 Content-Type: application/json
 
 {
-
 &quot;title&quot;: &quot;WiFi outage in Conference Room A&quot;,
-
 &quot;status&quot;: &quot;New&quot;,
-
 &quot;assignee&quot;: &quot;meganb@contoso.com&quot;
-
 }
+```
 
 >[!NOTE] Before indexed items can be found in the Microsoft Search UI, an administrator must [customize the search results page](https://docs.microsoft.com/MicrosoftSearch/configure-connector#next-steps-customize-the-search-results-page) for the corresponding connection.
 
@@ -281,25 +276,22 @@ Content-Type: application/json
 
 When an item is updated in the external service (helpdesk ticket is reassigned, or a product description is updated), you can update its entry in Microsoft Graph by [updating the externalItem](https://docs.microsoft.com/graph/api/externalitem-update?view=graph-rest-beta&amp;preserve-view=true), using the unique identifier assigned to the item when you created it.
 
-HTTPCopy
-
+```http
 PATCH /external/connections/contosohelpdesk/items/SR00145
-
 Content-Type: application/json
 
 {
-
 &quot;assignee&quot;: &quot;alexw@contoso.com&quot;
-
 }
+```
 
 ### Delete an item
 
 You can remove items from the index by [deleting the externalItem](https://docs.microsoft.com/graph/api/externalitem-delete?view=graph-rest-beta&amp;preserve-view=true), using the unique identifier assigned to the item when you created it.
 
-HTTPCopy
-
+```http
 DELETE /external/connections/contosohelpdesk/items/SR00145
+```
 
 ## External groups API
 
