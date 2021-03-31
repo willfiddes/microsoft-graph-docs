@@ -93,7 +93,7 @@ Set up the variables in Postman. This information is used to generate the access
 - Set the  **Current value**  of **username** to `admin@xxxxxxx.onmicrosoft.com`
 - Set the  **Current value**  of **password** to tenant admin password.
 
-![](./images/connectors-images/08-postman.png)
+![Configure authentication](./images/connectors-images/08-postman.png)
 
 3. Select  **Save** / **Update**.
 
@@ -280,7 +280,7 @@ Content-Type: application/json
 } 
 ```
 
-![](./images/connectors-images/15-postman.png)
+![Add external group](./images/connectors-images/15-postman.png)
 
 ## Step 9 - Ingest Items
 

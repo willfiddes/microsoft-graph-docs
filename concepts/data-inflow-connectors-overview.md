@@ -22,7 +22,7 @@ The following diagram provides a high-level overview of Microsoft Graph connecto
 
 <!---Insert image reference here --->
 <!---       ![Select the Microsoft Graph permissions](./images/application-saml-sso-configure-api/set-permissions.png) --->
-![Overview](./images/connectors-images/overview.png)
+![High level overview](./images/connectors-images/overview.png)
 
 ### Build your own custom connector
 We have 100+ connectors built by Microsoft and partners that enable you to connect to popular Microsoft and non-Microsoft services. Examples of existing connectors include Azure services, Box, ServiceNow, SalesForce, Google services, MediaWiki, and more.
