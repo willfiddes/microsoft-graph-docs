@@ -32,20 +32,20 @@ To use the Postman collection, you need to import it into your Postman workspace
 
 3. Once you go into &quot;My workspace&quot;, select the &quot;Import&quot; button.
 
-![Import](./images/connectors-images/03-postman-import.png)
+![Select Import 1](./images/connectors-images/03-postman-import.png)
 
 4. In the dialog that opens, select &quot;Link&quot; tab and enter the following URL - in the textbox:  `https://www.postman.com/collections/61bfc772fe030514b062`.
 
-![](./images/connectors-images/04-postman-link.png)
+![Select continue](./images/connectors-images/04-postman-link.png)
 
 5. Select Continue.
 6. Select Import.
 
-![](./images/connectors-images/05-postman-link-continue.png)
+![Select import 2](./images/connectors-images/05-postman-link-continue.png)
 
 You should now see the Microsoft graph Connectors API collection inside Postman.
 
-![](./images/connectors-images/06-postman-collection-tab.png)
+![Connection in Postman](./images/connectors-images/06-postman-collection-tab.png)
 
 ## Step 2 - (Optional - Postman Web browser only) Download the Postman Agent
 
@@ -83,7 +83,7 @@ Set up the variables in Postman. This information is used to generate the access
 
 1. Select the &quot;Microsoft Graph Connectors API&quot; tab and go to the &quot;Variables&quot; section.
 
-![](./images/connectors-images/07-postman.png)
+![Configure authentication](./images/connectors-images/07-postman.png)
 
 2. In the Variables section, provide the required information using the information from step 3.
 
@@ -97,11 +97,11 @@ Set up the variables in Postman. This information is used to generate the access
 
 3. Select  **Save** / **Update**.
 
-## Step 5 - Get an auth token
+## Step 5 - Get an authentication token
 
 You need to get an access token because this is the first time you are running a request as an application authentication flow. Get the app access token by making the following POST request:
 
-![](./images/connectors-images/09-postman.png)
+![Get auth token](./images/connectors-images/09-postman.png)
 
 Access token request with a shared secret:
 ```http
@@ -160,7 +160,7 @@ Content-type: application/json
 } 
 ```
 
- ![](./images/connectors-images/10-postman.png)
+ ![Create a new connection](./images/connectors-images/10-postman.png)
 
 ## Step 7 - Register connection schema
 
@@ -239,16 +239,16 @@ Content-type: application/json
 }
 ```
 
-![](./images/connectors-images/11-postman.png)
+![Register connection schema](./images/connectors-images/11-postman.png)
 
 Once the connection schema operation status changes from **InProgress** to **Completed,** you can ingest items for the connection.
 
- ![](./images/connectors-images/12-postman.png)
- ![](./images/connectors-images/13-postman.png)
+ ![Connection status 1](./images/connectors-images/12-postman.png)
+ ![Connection status 2](./images/connectors-images/13-postman.png)
 
 Once the connection state changes from **draft** to **ready** , you can ingest items into current connection.
 
-![](./images/connectors-images/14-postman.png)
+![Connection state from draft to ready](./images/connectors-images/14-postman.png)
 
 ## Step 8 - Add external group member (Optional)
 
