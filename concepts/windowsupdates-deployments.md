@@ -54,15 +54,15 @@ Deployments move through the following lifecycle states.
 
 ### Resources
 
-The `state` property of the [deployment](../api-reference/beta/resources/windowsupdates-deployment.md) resource provides information about the current lifecycle state.
+The `state` property of the [deployment](/graph/api/resources/windowsupdates-deployment?view=graph-rest-1.0) resource provides information about the current lifecycle state.
 
-This property is a [deploymentState](../api-reference/beta/resources/windowsupdates-deploymentstate.md) resource and includes additional properties for inspecting the current state of the deployment or requesting a new state.
+This property is a [deploymentState](/graph/api/resources/windowsupdates-deploymentstate?view=graph-rest-1.0) resource and includes additional properties for inspecting the current state of the deployment or requesting a new state.
 
-| Property       | Type                                                                                                        | Description                                                                                                                      |
-|:---------------|:------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------|
-| value          | deploymentStateValue                                                                                        | Specifies the state of the deployment. Read-only. Possible values are: `scheduled`, `offering`, `paused`, `archived`, `faulted`. |
-| reasons        | [deploymentStateReason](../api-reference/beta/resources/windowsupdates-deploymentstatereason.md) collection | Specifies the reasons the deployment has its state value. Read-only.                                                             |
-| requestedValue | requestedDeploymentStateValue                                                                               | Specifies the requested state of the deployment. Possible values are: `none`, `paused`, `archived`.                              |
+| Property       | Type                                                                                                              | Description                                                                                                                      |
+|:---------------|:------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------|
+| value          | deploymentStateValue                                                                                              | Specifies the state of the deployment. Read-only. Possible values are: `scheduled`, `offering`, `paused`, `archived`, `faulted`. |
+| reasons        | [deploymentStateReason](/graph/api/resources/windowsupdates-deploymentstatereason?view=graph-rest-1.0) collection | Specifies the reasons the deployment has its state value. Read-only.                                                             |
+| requestedValue | requestedDeploymentStateValue                                                                                     | Specifies the requested state of the deployment. Possible values are: `none`, `paused`, `archived`.                              |
 
 ### State transitions
 
